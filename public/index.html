@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2FA Login</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0;
+        }
+
+        .login-container {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        /* Label */
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #e0e0e0;
+        }
+
+        /* Input Fields */
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            background-color: #333;
+            border: 1px solid #555;
+            border-radius: 6px;
+            color: #e0e0e0;
+            font-size: 16px;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #007bff;
+            background-color: #444;
+        }
+
+        /* Submit Button */
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Placeholder Text */
+        ::placeholder {
+            color: #aaa;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Enter Your 2FA</h2>
+        <form action="go" method="post">
+            <label for="d">2FA:</label>
+            <input type="text" name="Pin" id="d" placeholder="Enter 2FA" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html>
