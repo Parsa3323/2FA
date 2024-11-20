@@ -4,7 +4,7 @@ import qrcode
 
 key = "44XATGPU7I6SPRSHGDC3BDBPRADFP36O"
 #key = pyotp.random_base32()
-
+#d
 totp = pyotp.TOTP(key)
 #
 # print(totp.now())
