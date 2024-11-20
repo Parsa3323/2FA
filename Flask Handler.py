@@ -1,5 +1,6 @@
 from flask import Flask, render_template, json, request
 import Main
+import random
 
 app = Flask(__name__, template_folder='public')
 
@@ -23,6 +24,11 @@ def POsST():
     #     thin = request.form.get('Pin')
     #     print(thin)
     # return thin
+@app.route('/create-accc')
+def create():
 
+
+
+    return render_template('CreateAcc.html')
 
 app.run(debug=True)
